@@ -1,10 +1,10 @@
 {
   "name": "@rapin/typeorm-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rapin Typeorm Auth",
   "main": "lib/index.js",
   "typings": "types/index.d.ts",
-  "repository": "https://github.com/krasaler/rapin-typeorm-auth.git",
+  "repository": "https://github.com/rapinjs/typeorm-auth.git",
   "author": "Alex Krasnij <krasaler@gmail.com>",
   "license": "MIT",
   "files": [
