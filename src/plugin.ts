@@ -41,7 +41,6 @@ export class User {
         userInfo = await this.db.findOne('User', {email, password: passwordHash.hash, salt: passwordHash.salt})
     }
     
-
     if (!isEmpty(userInfo)) {
       this.token = jwt.sign(toPlainObject(userInfo), process.env.SECRET_KEY, {
         expiresIn: 21600,
