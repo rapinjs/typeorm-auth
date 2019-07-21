@@ -1,9 +1,5 @@
 export declare class User {
-  login(
-    email: string,
-    password: string,
-    override?: boolean
-  ): string | boolean
+  login(email: string, password: string, override?: boolean): string | boolean
   verify(token: string): Promise<boolean>
   getId(): number
   getFirstName(): string
@@ -16,8 +12,14 @@ export declare class User {
   isLogged(): boolean
 }
 
-declare module "rapin" {
-    interface Context {
-      user: User
-    }
+declare module 'rapin' {
+  interface Context {
+    user: User
   }
+}
+
+export declare const Auth: () => (
+  target: any,
+  propertyKey: string,
+  descriptor: PropertyDescriptor
+) => void
